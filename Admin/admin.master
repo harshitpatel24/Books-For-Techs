@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="Admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+   
+        <link href="../StyleSheet.css" rel="stylesheet" type="text/css" />
+   
+</head>
+<body style="text-decoration:none" alink="white" vlink="white" link="white"> 
+    <form id="form1" runat="server">    
+    <table align="center" width="100%">
+    <tr>
+    <td>
+    <img src="../ICON.jpg" style="height: 114px; width: 454px; margin-top: 0px" />       
+    </td>
+    <td>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </td>
+    <td>
+        <img src="../admin.gif" />
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <table style="width: 176%">
+        <tr>
+        <td>
+        <div class="menu">
+        <a href="add_publication.aspx" >Add Publications</a>
+        </div>
+        </td>
+        <td>
+        <div class="menu">
+        <a href="add_book.aspx" >Add Book</a></div>
+        </td>
+        <td>
+        <div class="menu">
+        <a href="#" >Custom Orders</a>
+        </div>
+        </td>
+        </div>
+        
+        </tr>
+        </table>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+        <asp:Panel ID="Panel1" runat="server" align="center">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </asp:Panel>
+    </td>
+    </tr>
+    <tr>
+    <td colspan="3" align="right">
+    <div class="menu">
+    &nbsp; &copy;BooksForTechs
+    </div>
+    </td>
+    
+    </tr>
+    </table>
+
+    </form>
+</body>
+</html>

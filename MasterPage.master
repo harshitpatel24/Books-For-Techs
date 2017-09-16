@@ -1,0 +1,163 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+<link href="StyleSheet2.css" rel="stylesheet" type="text/css" />
+<body alink="white" vlink="white" link="white">
+    <form id="form1" runat="server">
+    <div>
+        <div class="banner">
+            <table>
+                <tr>
+                    <td>
+                        <img src="ICON.jpg" style="height: 114px; width: 454px; margin-top: 0px" />
+                    </td>
+                    <td class="style2">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="46px">
+                            <asp:ListItem>Authors</asp:ListItem>
+                            <asp:ListItem>Publications</asp:ListItem>
+                            <asp:ListItem>Bookname</asp:ListItem>
+                            <asp:ListItem>Semester</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td>
+                        <asp:TextBox ID="TextBox1" runat="server" Height="41px" Width="443px"></asp:TextBox>
+                    </td>
+                    <td>
+                        <a href="#">
+                            <img src="metroui-other-search-icon.png" style="height: 46px; width: 52px" /></a>
+                    </td>
+                    <td>
+                        <a href="login.aspx">
+                            <img src="mem_ship.jpg" style="height: 70px; width: 77px" /><br />
+                            
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">                                   
+                                 </asp:ContentPlaceHolder>
+                            </asp:ContentPlaceHolder>
+                        </a>&nbsp;<strong> </strong>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="menu">
+            <table style="width: 103%" align="center">
+                <tr align="center">
+                    <td>
+                     
+                        <a href="Home_Page.aspx" class="dropbtn">Home</a>
+                     <!--<div class="dropdown">                    
+                     
+                        <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        </div>
+                    </div> -->                
+                        
+                    </td>
+                    <td>
+                        <a href="NewBook.aspx" class="dropbtn">Buy Book</a> 
+                         
+                    </td>
+                    <td>
+                        <a href="OldBook.aspx" >Sell Book</a> 
+                    </td>
+                    <td>
+                    <a href="ViewOldUploadedBooks.aspx" >View Old Books</a> 
+                   
+                    </td>
+                    <td>
+                        <a href="DonateBooks.aspx" >Donate Books</a> 
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="main" style="margin-left:200px;margin-top:30px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">
+            <table cellspacing="15" width="95%">
+                <tr>
+                    <th>
+                        INFORMATION
+                    </th>
+                    <th>
+                        COMPANY
+                    </th>
+                    <th>
+                        MY ACCOUNT
+                    </th>
+                    <th>
+                        SUPPORT
+                    </th>
+                </tr>
+                <tr>
+                    <td class="style1">
+                        <ul>
+                            <li><a href="#">SUPER 7</a></li>
+                            <li><a href="#">+9100000000</a></li>
+                            <li><a href="#">info@booksfortechs.com</a></li>
+                        </ul>
+                    </td>
+                    <td class="style1">
+                        <ul>
+                            <li><a href="About_us.aspx">About Us</a></li>
+                            <li><a href="Terms_of_use.aspx">Terms of Use</a></li>
+                            <li><a href="Contact_us.aspx">Contact Us</a></li>
+                        </ul>
+                    </td>
+                    <td class="style1">
+                        <ul>
+                            <li><a href="cart.aspx">My cart</a></li>
+                            <li><a href="#">My Personal info</a></li>
+                            <li><a href="#">My Addresses</a></li>
+                            <li><a href="#">My Orders</a></li>
+                        </ul>
+                    </td>
+                    <td class="style1">
+                        <ul>
+                            <li><a href="#">How to Order</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Return</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td style="float: right;">
+                        <img src="square-facebook-128.png" style="height: 37px; width: 27px" />
+                        <img src="square-google-plus-128.png" style="height: 35px; width: 33px" />
+                        <b>&copy;Copyright IANT </b>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
